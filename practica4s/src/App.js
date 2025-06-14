@@ -3,19 +3,22 @@ import './App.css';
 
 function App() {
   return (
-    <div className="Apps">
+    <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Bienvenido a <strong>mi práctica 4 de Desarrollo Web Integral</strong>.
+        </p>
+        <p>
+          Editado por <code>Salvador Vega</code>.
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org" 
+          href="https://github.com/Salvadorvga2004/practica4s"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Ver repositorio en GitHub
         </a>
       </header>
     </div>
