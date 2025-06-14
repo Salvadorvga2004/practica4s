@@ -5,12 +5,16 @@ on:
     branches:
       - main
 
+...
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Set working directory
+        run: cd practica4s
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -19,12 +23,14 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: practica4s
 
       - name: Build the app
         run: npm run build
+        working-directory: practica4s
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: practica4s/build
