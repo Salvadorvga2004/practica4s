@@ -10,7 +10,7 @@ function App() {
           Bienvenido a <strong>mi práctica 4 de Desarrollo Web Integral</strong>.
         </p>
         <p>
-          Editado por <code>Salvador Vega</code>.
+          Editado por <code>Salvador Vega Ce</code>.
         </p>
         <a
           className="App-link"
