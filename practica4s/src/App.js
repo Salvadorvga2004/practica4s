@@ -1,28 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
+import Layout from './Layout'; 
+import './App.css'; 
+ function Home() {  return <h1>Bienvenidos a la Página de Inicio</h1>; 
+}  function About() {  return <h2>Acerca de Mi</h2>; 
+} 
+ 
+function App() {  return ( 
+   <BrowserRouter> 
+     <Routes> 
+       <Route path="/" element={<Layout />}> 
+         <Route index element={<Home />} /> 
+         <Route path="about" element={<About />} /> 
+       </Route> 
+     </Routes> 
+   </BrowserRouter> 
+   
+ ); 
+}  
+export default App; 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Bienvenido a <strong>mi práctica 4 de Desarrollo Web Integral</strong>.
-        </p>
-        <p>
-          Editado por <code>Salvador Vega Ce</code>.
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/Salvadorvga2004/practica4s"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Ver repositorio en GitHub
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
