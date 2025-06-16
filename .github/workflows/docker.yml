@@ -15,6 +15,7 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t practica4s .
+        working-directory: practica4s/practica4s
 
       - name: Create build directory from Docker container
         run: |
