@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
 import Layout from './Layout'; 
 import './App.css'; 
- function Home() {  return <h1>Bienvenidos a la Página de Inicio</h1>; 
+ function Home() {  return <h1>Bienvenidos a la Página de Inicio </h1>; 
 }  function About() {  return <h2>Acerca de Mi</h2>; 
 } 
  
@@ -17,5 +17,4 @@ function App() {  return (
    
  ); 
 }  
-export default App; 
-
+export default App;
