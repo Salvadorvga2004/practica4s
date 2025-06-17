@@ -3,7 +3,7 @@ import Layout from './Layout';
 import './App.css';
 
 function Home() {
-  return <h1>Bienvenidos a la Página de Inicio</h1>;
+  return <h1>Bienvenidos a la Página de Inicio - Lunes 16</h1>;
 }
 function About() {
   return <h2>Acerca de Mi</h2>;
@@ -11,7 +11,7 @@ function About() {
 
 function App() {
   return (
-    <BrowserRouter basename="/practica4s">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
